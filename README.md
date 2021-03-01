@@ -1,8 +1,8 @@
 # Dotfiles for my NVIM setup
 
 ## Requirements
--neovim
--some editor like iterm2
+- neovim
+- some editor like iterm2
 
 ## Install vim-plug
 ```
