@@ -1,2 +1,4 @@
-# dotfiles
-nvim setup
+# dotfiles for NVIM
+
+Requirements:
+TODO
