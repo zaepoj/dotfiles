@@ -1,4 +1,4 @@
-# dotfiles for NVIM
+# Dotfiles for NVIM
 
 Requirements:
 TODO
