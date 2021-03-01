@@ -8,6 +8,8 @@ Plug 'wadackel/vim-dogrun'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 "Plug 'airblade/vim-rooter'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 
@@ -28,6 +30,7 @@ let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/bin/python3"
 "SOURCES
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
+source $HOME/.config/nvim/themes/airline.vim
 
 
 "SOURCE COMMANDS
