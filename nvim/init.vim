@@ -4,10 +4,12 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'drewtempelmeyer/palenight.vim'
 Plug 'wadackel/vim-dogrun'
+Plug 'arzg/vim-substrata'
 "Plug 'owickstrom/vim-colors-paramount'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-"Plug 'airblade/vim-rooter'
+Plug 'airblade/vim-rooter'
+Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
@@ -15,7 +17,7 @@ call plug#end()
 
 "COLORS
 set termguicolors
-colorscheme dogrun
+colorscheme substrata
 set background=dark
 "colorscheme paramount
 "colorscheme palenight
@@ -23,7 +25,7 @@ set background=dark
 
 
 "PATH
-let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/bin/python3"
+let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/local/bin/python3"
 
 
 

@@ -16,6 +16,7 @@
   "prettier.semi": true,
   // explorer
   "explorer.width": 30,
+  "explorer.file.showHiddenFiles": true,
   "explorer.icon.enableNerdfont": true,
   "explorer.mouseMode": "singleclick",
   "explorer.previewAction.onHover": false,

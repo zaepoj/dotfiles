@@ -12,7 +12,7 @@ let g:airline_right_sep = ''
 
 " Switch to your current theme
 let g:airline_theme = 'minimalist'
-
+let g:airline#extensions#tabline#buffer_idx_mode = 1
 " Always show tabs
 set showtabline=2
 
