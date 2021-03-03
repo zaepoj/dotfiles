@@ -1,10 +1,17 @@
-
+set nocompatible
 "PLUGINS INSTALL
-call plug#begin('~/.vim/plugged')
+call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+"Plug 'sheerun/vim-polyglot'
+
 "Plug 'drewtempelmeyer/palenight.vim'
-Plug 'wadackel/vim-dogrun'
-Plug 'arzg/vim-substrata'
+"Plug 'wadackel/vim-dogrun'
+"Plug 'arzg/vim-substrata'
+"Plug 'embark-theme/vim', { 'as': 'embark' }
+Plug 'cocopon/iceberg.vim'
+"Plug 'kyazdani42/blue-moon'
+
 "Plug 'owickstrom/vim-colors-paramount'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -16,9 +23,12 @@ call plug#end()
 
 
 "COLORS
+
 set termguicolors
-colorscheme substrata
 set background=dark
+colorscheme iceberg
+
+"set background=dark
 "colorscheme paramount
 "colorscheme palenight
 
@@ -30,6 +40,7 @@ let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/local/bin/python3"
 
 
 "SOURCES
+
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/themes/airline.vim
