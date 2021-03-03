@@ -1,8 +1,14 @@
+# MacDev
+- MacDev.applescript is my personal desktop setup script to quickly open applications and position them on desktops
+- Can be downloaded and bundled with Applescript editor into .dmg Application.
+
+
+
 # Dotfiles for my NVIM setup
 
 ## Requirements
 - neovim
-- some editor like iterm2
+- some editor like iTerm2
 
 ## Install vim-plug
 ```
