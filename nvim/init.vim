@@ -2,8 +2,8 @@ set nocompatible
 "PLUGINS INSTALL
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-"Plug 'sheerun/vim-polyglot'
+"Plug 'pangloss/vim-javascript'
+Plug 'sheerun/vim-polyglot'
 
 "Plug 'drewtempelmeyer/palenight.vim'
 "Plug 'wadackel/vim-dogrun'
@@ -26,7 +26,11 @@ call plug#end()
 
 set termguicolors
 set background=dark
+
 colorscheme iceberg
+
+
+"hi CocErrorFloat guifg=#d1666a guibg=#d1666a
 
 "set background=dark
 "colorscheme paramount
@@ -43,7 +47,10 @@ let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/local/bin/python3"
 
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
+
+
 source $HOME/.config/nvim/themes/airline.vim
+
 
 
 "SOURCE COMMANDS
@@ -52,6 +59,19 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 " set leader key
 let g:mapleader = "\<Space>"
 
+
+"GENERAL
+"set autochdir                           " Your working directory will always be the same as your working directory
+
+au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+
+" You can't stop me
+cmap w!! w !sudo tee %
+
+
+"nmap <leader>qq <c-^><cr>
+
+"KEYMAPS
 "GENERAL
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -62,7 +82,7 @@ set fileencoding=utf-8                  " The encoding written to file
 set ruler              			            " Show the cursor position all the time
 set cmdheight=2                         " More space for displaying messages
 set iskeyword+=-                      	" treat dash separated words as a word text object"
-set mouse=a                             " Enable your mouse
+set mouse=a                             " Enable your mous
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
@@ -85,19 +105,7 @@ set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
-"set autochdir                           " Your working directory will always be the same as your working directory
-
-au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
-
-" You can't stop me
-cmap w!! w !sudo tee %
-
-
-"nmap <leader>qq <c-^><cr>
-
-
-"KEYMAPS
-
+"set autochdir  e
 
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
@@ -114,3 +122,8 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 " Better tabbing
 vnoremap < <gv
 vnoremap > >gv
+
+
+:highlight CocErrorHighlight ctermfg=Red  guifg=#d1666a
+:highlight CocErrorLine ctermfg=Red  guifg=#d1666a
+:highlight CocErrorSign ctermfg=Red guifg=#d1666a
