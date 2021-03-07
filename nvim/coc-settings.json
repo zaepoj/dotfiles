@@ -14,6 +14,7 @@
   "prettier.singleQuote": false,
   "prettier.trailingComma": "es5",
   "prettier.semi": true,
+  "diagnostic.checkCurrentLine": true,
   "typescript.showUnused": false,  // explorer
   "explorer.width": 30,
   "explorer.file.showHiddenFiles": true,
@@ -23,7 +24,5 @@
   "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
-  },
-  // git
-  "git.addGBlameToVirtualText": true
+  }
 }
