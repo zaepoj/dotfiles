@@ -33,13 +33,13 @@ colorscheme iceberg
 "hi CocErrorFloat guifg=#d1666a guibg=#d1666a
 
 "set background=dark
-"colorscheme paramount
+"colorsheme paramount
 "colorscheme palenight
 
 
 
 "PATH
-let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/local/bin/python3"
+let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/bin/python3"
 
 
 
@@ -126,4 +126,4 @@ vnoremap > >gv
 
 :highlight CocErrorHighlight ctermfg=Red  guifg=#d1666a
 :highlight CocErrorLine ctermfg=Red  guifg=#d1666a
-:highlight CocErrorSign ctermfg=Red guifg=#d1666a
+:highlight CocErrorSign ctermfg=Red guifg=#d1666ac
