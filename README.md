@@ -30,6 +30,11 @@ Install atleast:
 - coc-explorer
 - coc-eslint
 - coc-vimlsp
+- coc-explorer
+- coc-highlight
+- coc-css
+- coc-git
+- coc-html:
 
 #### Make sure your terminal supports True color
 
