@@ -34,7 +34,8 @@ Install atleast:
 - coc-highlight
 - coc-css
 - coc-git
-- coc-html:
+- coc-html
+- coc-styled-components (if you are using styled-components in your project)
 
 #### Make sure your terminal supports True color
 
