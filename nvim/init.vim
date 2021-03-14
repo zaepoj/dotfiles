@@ -4,7 +4,7 @@ call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'pangloss/vim-javascript'
 Plug 'sheerun/vim-polyglot'
-
+Plug 'tpope/vim-fugitive'
 "Plug 'drewtempelmeyer/palenight.vim'
 "Plug 'wadackel/vim-dogrun'
 "Plug 'arzg/vim-substrata'
@@ -16,9 +16,10 @@ Plug 'cocopon/iceberg.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
-Plug 'airblade/vim-gitgutter'
+"Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 
@@ -66,7 +67,6 @@ let g:mapleader = "\<Space>"
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
 " You can't stop me
-cmap w!! w !sudo tee %
 
 
 "nmap <leader>qq <c-^><cr>
