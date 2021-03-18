@@ -9,34 +9,39 @@ Plug 'tpope/vim-fugitive'
 "Plug 'wadackel/vim-dogrun'
 "Plug 'arzg/vim-substrata'
 "Plug 'embark-theme/vim', { 'as': 'embark' }
-Plug 'cocopon/iceberg.vim'
+"Plug 'cocopon/iceberg.vim'
+Plug 'rakr/vim-two-firewatch'
+"Plug 'pgavlin/pulumi.vim'
 "Plug 'kyazdani42/blue-moon'
+"Plug 'arcticicestudio/nord-vim'
 
+"Plug 'sts10/vim-pink-moon'
 "Plug 'owickstrom/vim-colors-paramount'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
-"Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'arcticicestudio/nord-vim'
+"Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 
 "COLORS
 
+hi clear
+syntax reset
 set termguicolors
+
+colorscheme two-firewatch
+
 set background=dark
-
-colorscheme iceberg
-
 
 "hi CocErrorFloat guifg=#d1666a guibg=#d1666a
 
 "set background=dark
 "colorsheme paramount
 "colorscheme palenight
-
 
 
 "PATH
@@ -50,7 +55,7 @@ source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 
 
-source $HOME/.config/nvim/themes/airline.vim
+"source $HOME/.config/nvim/themes/airline.vim
 
 
 
@@ -66,7 +71,6 @@ let g:mapleader = "\<Space>"
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
-" You can't stop me
 
 
 "nmap <leader>qq <c-^><cr>
@@ -127,3 +131,10 @@ vnoremap > >gv
 :highlight CocErrorHighlight ctermfg=Red  guifg=#d1666a
 :highlight CocErrorLine ctermfg=Red  guifg=#d1666a
 :highlight CocErrorSign ctermfg=Red guifg=#d1666ac
+":highlight Special ctermfg=150 guifg=#D8DEE9
+
+:set foldcolumn=0
+set signcolumn=no
+
+
+let g:airline_theme='twofirewatch'
