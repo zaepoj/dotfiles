@@ -123,4 +123,4 @@ key_bindings:
   - { key: Key0, mods: Control, action: ResetFontSize }
   - { key: Equals, mods: Control, action: IncreaseFontSize }
   - { key: Grave, mods: Alt|Shift, chars: "\x1b~" } # Alt + ~
-  - { key: Grave, mods: Alt, chars: "\x1b`" } # Alt + `
+  - { key: Grave, mods: Alt, chars: "\x1b`" } # Alt + `"
