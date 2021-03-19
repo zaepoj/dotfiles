@@ -1,0 +1,126 @@
+env:
+  TERM: xterm-256color
+
+window:
+  dynamic_title: true
+
+  padding:
+    y: 2
+    x: 4
+  decorations: none
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: "JetBrainsMono Nerd Font"
+    style: Regular
+
+  bold:
+    family: "JetBrainsMono Nerd Font"
+    style: Bold
+
+  italic:
+    family: "JetBrainsMono Nerd Font"
+    style: Italic
+
+  bold_italic:
+    family: "JetBrainsMono Nerd Font"
+    style: Bold Italic
+
+  size: 14.0
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+use_thin_strokes: false
+draw_bold_text_with_bright_colors: true
+
+selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: true
+
+colors:
+  vi_mode_cursor:
+    text: "#1b1e2b"
+    cursor: "#89ddff"
+
+  selection:
+    text: "#a6accd"
+    background: "#32374d"
+
+  cursor:
+    text: "#1b1e2b"
+    cursor: "#a6accd"
+
+  # Default coors
+  primary:
+    background: "#282c34"
+    foreground: "#abb2bf"
+
+  # Normal colors
+  normal:
+    black: "#1b1e2b"
+    red: "#d06178"
+    green: "#b4c4b4"
+    yellow: "#b4b4b4"
+    blue: "#959dcb"
+    magenta: "#a9a3db"
+    cyan: "#89bbdd"
+    white: "#a6accd"
+
+  # Bright colors
+  bright:
+    black: "#292d3e"
+    red: "#e61f44"
+    green: "#d0e7d0"
+    yellow: "#cfcfbf"
+    blue: "#b8bcf3"
+    magenta: "#b9a3eb"
+    cyan: "#89ddff"
+    white: "#ffffff"
+
+bell:
+  animation: EaseOutExpo
+  duration: 0
+  color: "#ffffff"
+
+background_opacity: 1
+
+mouse:
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+  hide_when_typing: false
+
+  url:
+    launcher: xdg-open
+    modifiers: Control
+
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+live_config_reload: true
+alt_send_esc: false
+
+debug:
+  render_time: false
+  persistent_logging: false
+  log_level: Warn
+  print_events: false
+  ref_test: false
+
+key_bindings:
+  - { key: V, mods: Control|Shift, action: Paste }
+  - { key: C, mods: Control|Shift, action: Copy }
+  - { key: Key0, mods: Control, action: ResetFontSize }
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - { key: Grave, mods: Alt|Shift, chars: "\x1b~" } # Alt + ~
+  - { key: Grave, mods: Alt, chars: "\x1b`" } # Alt + `
