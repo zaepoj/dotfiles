@@ -4,18 +4,14 @@ call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'pangloss/vim-javascript'
 Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-fugitive'
+Plug 'rakr/vim-two-firewatch'
 "Plug 'drewtempelmeyer/palenight.vim'
 "Plug 'wadackel/vim-dogrun'
 "Plug 'arzg/vim-substrata'
 "Plug 'embark-theme/vim', { 'as': 'embark' }
 "Plug 'cocopon/iceberg.vim'
-Plug 'rakr/vim-two-firewatch'
-"Plug 'pgavlin/pulumi.vim'
 "Plug 'kyazdani42/blue-moon'
-"Plug 'arcticicestudio/nord-vim'
-
-"Plug 'sts10/vim-pink-moon'
+Plug 'tpope/vim-fugitive'
 "Plug 'owickstrom/vim-colors-paramount'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -23,7 +19,6 @@ Plug 'airblade/vim-rooter'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-"Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 
@@ -32,20 +27,21 @@ call plug#end()
 hi clear
 syntax reset
 set termguicolors
-
 colorscheme two-firewatch
-
 set background=dark
+
+
 
 "hi CocErrorFloat guifg=#d1666a guibg=#d1666a
 
 "set background=dark
-"colorsheme paramount
+"colorscheme paramount
 "colorscheme palenight
 
 
+
 "PATH
-let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/bin/python3"
+let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/local/bin/python3"
 
 
 
@@ -109,7 +105,7 @@ set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
-"set autochdir  e
+"set autochdir e
 
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
@@ -130,11 +126,9 @@ vnoremap > >gv
 
 :highlight CocErrorHighlight ctermfg=Red  guifg=#d1666a
 :highlight CocErrorLine ctermfg=Red  guifg=#d1666a
-:highlight CocErrorSign ctermfg=Red guifg=#d1666ac
-":highlight Special ctermfg=150 guifg=#D8DEE9
+:highlight CocErrorSign ctermfg=Red guifg=#d1666a
 
 :set foldcolumn=0
 set signcolumn=no
-
 
 let g:airline_theme='twofirewatch'
