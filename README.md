@@ -8,7 +8,8 @@
 
 ## Requirements
 - neovim
-- some editor like iTerm2
+- some editor like iTerm2 / Alacritty
+- tmux
 
 ## Install vim-plug
 ```
