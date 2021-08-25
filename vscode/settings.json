@@ -1,0 +1,71 @@
+{
+  "window.zoomLevel": 1,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "extensions.ignoreRecommendations": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.renderWhitespace": "all",
+  "editor.fontFamily": "Roboto Mono medium",
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Plain Dark",
+  "gitlens.gitCommands.closeOnFocusOut": true,
+  "git.suggestSmartCommit": false,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.iconTheme": "city-lights-icons-vsc",
+  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/init.vim",
+  "workbench.statusBar.visible": true,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "prettier.trailingComma": "all",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.gpuAcceleration": "off",
+ "window.titleBarStyle": "custom",
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#282c34",
+    "titleBar.activeBackground": "#282c34",
+    "sideBar.background": "#282c34",
+    "tab.activeBackground": "#282c39",
+    "tab.inactiveBackground": "#282c34",
+    "sideBar.foreground": "#78889c",
+    "list.hoverBackground": "#93a9c4",
+    "editor.selectionBackground": "#787a8a",
+    "statusBar.background": "#F88070",
+    "statusBar.noFolderBackground": "#F88070",
+    "statusBar.debuggingBackground": "#F88070",
+    "merge.border": "#3b425200",
+    "merge.currentContentBackground": "#81a1c14d",
+    "merge.currentHeaderBackground": "#81a1c166",
+    "merge.incomingContentBackground": "#8fbcbb4d",
+    "merge.incomingHeaderBackground": "#8fbcbb66",
+    "editorGroupHeader.tabsBackground": "#2e3440",
+    "editorBracketMatch.background": "#352e50",
+    "editor.selectionHighlightBackground": "#352e50"
+  },
+  "vim.neovimConfigPath": "/usr/bin/nvim",
+
+  "editor.tokenColorCustomizations": {
+    "functions": "#989cb8"
+  },
+
+  "vim.statusBarColors.normal": "#282c34",
+  "vim.statusBarColors.insert": "#55606d",
+  "vim.statusBarColors.visual": "#F88070",
+  "vim.statusBarColors.visualblock": "#F88070",
+  "vim.statusBarColors.visualline": "#F88070",
+  
+  "vim.statusBarColorControl": true,
+
+}
+
+
+
