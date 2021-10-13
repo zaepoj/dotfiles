@@ -20,23 +20,13 @@ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubuserc
 ```
 :PlugInstall
 ```
+CoC setup no longer included. Switched to LSP.
 
-## Coc Installs
-Install atleast:
-- coc-prettier
-- coc-json
-- coc-snippers
-- coc-tsserver
-- coc-pairs
-- coc-explorer
-- coc-eslint
-- coc-vimlsp
-- coc-explorer
-- coc-highlight
-- coc-css
-- coc-git
-- coc-html
-- coc-styled-components (if you are using styled-components in your project)
+
+
+## Yabai and shdk
+refer to this https://www.notion.so/Yabai-8da3b829872d432fac43181b7ff628fc
+
 
 #### Make sure your terminal supports True color
 
