@@ -7,7 +7,9 @@ window:
   padding:
     y: 2
     x: 4
-  decorations: none
+  decorations: full
+  dynamic_title: true
+  startup_mode: Maximized
 
 scrolling:
   history: 10000
@@ -48,44 +50,75 @@ selection:
   save_to_clipboard: true
 
 colors:
-  vi_mode_cursor:
-    text: "#1b1e2b"
-    cursor: "#89ddff"
-
-  selection:
-    text: "#a6accd"
-    background: "#32374d"
+  primary:
+    # for hard contrast: #1b1b23
+    # for neutral contrast: #20202a
+    # for soft contrast: #2c2e3e
+    background:        &aquarium_bg '#20202a'
+    foreground:        '#c8cedc'
+    bright_foreground: '#a0a8b6'
+    dim_foreground:    '#4c5664'
 
   cursor:
-    text: "#1b1e2b"
-    cursor: "#a6accd"
+    style: Underline
+    text:   CellBackground
+    cursor: '#ebe3b9'
 
-  # Default coors
-  primary:
-    background: "#282c34"
-    foreground: "#abb2bf"
 
-  # Normal colors
-  normal:
-    black: "#1b1e2b"
-    red: "#d06178"
-    green: "#b4c4b4"
-    yellow: "#b4b4b4"
-    blue: "#959dcb"
-    magenta: "#a9a3db"
-    cyan: "#89bbdd"
-    white: "#a6accd"
+  vi_mode_cursor:
+    text:   CellBackground
+    cursor: '#ebe3b9'
 
-  # Bright colors
+  search:
+    matches:
+      foreground: '#000000'
+      background: '#ffffff'
+
+    focused_match:
+     foreground: CellBackground
+     background: CellForeground
+
+    bar:
+      background: None
+      foreground: None
+
+  line_indicator:
+    foreground: None
+    background: None
+
+  selection:
+    text:       CellBackground
+    background: CellForeground
+
   bright:
-    black: "#292d3e"
-    red: "#e61f44"
-    green: "#d0e7d0"
-    yellow: "#cfcfbf"
-    blue: "#b8bcf3"
-    magenta: "#b9a3eb"
-    cyan: "#89ddff"
-    white: "#ffffff"
+    black:   '#3b3b4d'
+    red:     '#ebb9b9'
+    green:   '#caf6bb'
+    yellow:  '#ebe3b9'
+    blue:    '#cddbf9'
+    magenta: '#f6bbe7'
+    cyan:    '#b8dceb'
+    white:   '#c8cedc'
+
+  normal:
+    black:   '#3b3b4d'
+    red:     '#ebb9b9'
+    green:   '#caf6bb'
+    yellow:  '#ebe3b9'
+    blue:    '#cddbf9'
+    magenta: '#f6bbe7'
+    cyan:    '#b8dceb'
+    white:   '#c8cedc'  
+
+  dim:
+    black:   '#32302f'
+    red:     '#cc9b9d'
+    green:   '#a3ccad'
+    yellow:  '#d1ba97'
+    blue:    '#076678'
+    magenta: '#c497b3'
+    cyan:    '#86bfbc'
+    white:   '#928374'
 
 bell:
   animation: EaseOutExpo
@@ -123,4 +156,4 @@ key_bindings:
   - { key: Key0, mods: Control, action: ResetFontSize }
   - { key: Equals, mods: Control, action: IncreaseFontSize }
   - { key: Grave, mods: Alt|Shift, chars: "\x1b~" } # Alt + ~
-  - { key: Grave, mods: Alt, chars: "\x1b`" } # Alt + `"
+  - { key: Grave, mods: Alt, chars: "\x1b`" } # Alt + `
