@@ -14,9 +14,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'sbdchd/neoformat'
+Plug 'kyazdani42/blue-moon'
 call plug#end()
 
-colorscheme aquarium
+colorscheme blue-moon
 let g:aqua_bold = 1
 let g:aquarium_style="dark"
 let g:airline_theme="base16_aquarium_dark"
@@ -128,19 +129,18 @@ let g:nvim_tree_icons = {
 nnoremap <C-n> :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
-
+nnoremap <leader>e :bn<CR>
+nnoremap <leader>q :bp<CR>
+nnoremap <leader>t :bd<CR>
 
 set termguicolors " this variable must be enabled for colors to be applied properly
 
 set noshowmode
 
-highlight NvimTreeFolderIcon guibg=blue
-
 "prettier on save
 autocmd BufWritePre *.js Neoformat
 autocmd BufWritePre *.ts Neoformat
 
-syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
@@ -163,3 +163,8 @@ set laststatus=0                        " Always display the status line
 set number                              " Line numbers
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
+
+highlight NvimTreeFolderIcon guibg=blue
+hi Identifier guifg=#b4b4b4
+hi Keyword guifg=#b4b4b4
+
