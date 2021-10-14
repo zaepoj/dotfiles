@@ -49,7 +49,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background, but no title bar buttons
-  decorations: transparent
+  decorations: buttonless
 
   startup_mode: Maximized
 
@@ -72,10 +72,26 @@ scrolling:
 # Some applications, like Emacs, rely on knowing about the width of a tab.
 # To prevent unexpected behavior in these applications, it's also required to
 # change the `it` value in terminfo when altering this setting.
-tabspaces: 2
+  tabspaces: 2
 
 # Font configuration (changes require restart)
 font:
+  normal:
+    family: "Menlo"
+    style: Regular
+
+  bold:
+    family: "Menlo"
+    style: Bold
+
+
+  italic:
+    family: "Menlo"
+    style: Italic
+
+  bold_italic:
+    family: "Menlo"
+    style: Bold Italic
   # Normal (roman) font face
   #normal:
     # Font family
