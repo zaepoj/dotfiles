@@ -1,13 +1,11 @@
 call plug#begin()
 Plug 'hrsh7th/nvim-compe'
 Plug 'neovim/nvim-lspconfig'
+Plug 'shaunsingh/nord.nvim'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'kyazdani42/nvim-web-devicons' 
 Plug 'kyazdani42/nvim-tree.lua'
-Plug 'itchyny/lightline.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'frenzyexists/aquarium-vim'
-Plug 'vim-airline/vim-airline'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'tpope/vim-fugitive'
@@ -15,20 +13,37 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'sbdchd/neoformat'
 Plug 'kyazdani42/blue-moon'
+Plug 'tami5/lspsaga.nvim', { 'branch': 'nvim51' }
+Plug 'onsails/lspkind-nvim'
+Plug 'mhinz/vim-startify'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
+
+"Theme related
+set termguicolors
 colorscheme blue-moon
-let g:aqua_bold = 1
-let g:aquarium_style="dark"
-let g:airline_theme="base16_aquarium_dark"
-:set number
+
+
+let g:lightline = {
+      \ 'colorscheme': 'blue-moon',
+      \ }
+
+" lua files
+luafile ~/.config/nvim/compe-config.lua
+luafile ~/.config/nvim/nvim-tree.lua
+luafile ~/.config/nvim/gitsigns.lua
+luafile ~/.config/nvim/lspsaga.lua
+luafile ~/.config/nvim/lspkind.lua
+
 
 lua require('lspconfig').tsserver.setup{}
 
 
-" set leader key
-let g:mapleader = "\<Space>"
 
+
+" Key mappings
+let g:mapleader = "\<Space>"
 nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>
 nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
@@ -50,13 +65,24 @@ nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 
+" way to find hi color name
+nnoremap <f10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<cr>
+
+nnoremap <silent> K <cmd>lua require('lspsaga.hover').render_hover_doc()<CR>
+
+nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <leader>r :NvimTreeRefresh<CR>
+nnoremap <leader>n :NvimTreeFindFile<CR>
+nnoremap <leader>e :bn<CR>
+nnoremap <leader>q :bp<CR>
+nnoremap <leader>t :bd<CR>
 
 
-luafile ~/.config/nvim/compe-config.lua
-luafile ~/.config/nvim/nvim-tree.lua
-luafile ~/.config/nvim/gitsigns.lua
-set mouse=a
 
+
+" nvim tree specific 
 
 let g:nvim_tree_ignore = [ '.git', 'node_modules', '.cache' ] "empty by default
 let g:nvim_tree_gitignore = 1 "0 by default
@@ -126,21 +152,16 @@ let g:nvim_tree_icons = {
     \   }
     \ }
 
-nnoremap <C-n> :NvimTreeToggle<CR>
-nnoremap <leader>r :NvimTreeRefresh<CR>
-nnoremap <leader>n :NvimTreeFindFile<CR>
-nnoremap <leader>e :bn<CR>
-nnoremap <leader>q :bp<CR>
-nnoremap <leader>t :bd<CR>
 
-set termguicolors " this variable must be enabled for colors to be applied properly
 
-set noshowmode
 
 "prettier on save
 autocmd BufWritePre *.js Neoformat
 autocmd BufWritePre *.ts Neoformat
 
+:set number
+set noshowmode
+set mouse=a
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
@@ -159,12 +180,29 @@ set smarttab                            " Makes tabbing smarter will realize you
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
-set laststatus=0                        " Always display the status line
+set laststatus=2                        " Always display the status line
 set number                              " Line numbers
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
 
+
+"override theme colors
 highlight NvimTreeFolderIcon guibg=blue
 hi Identifier guifg=#b4b4b4
 hi Keyword guifg=#b4b4b4
+hi link Keyword typescriptProp
+
+
+let g:startify_custom_header = [
+      \ ' __    __                                __               ',
+      \ '|  \  |  \                              |  \              ',
+      \ '| $$\ | $$  ______    ______  __     __  \$$ ______ ____  ',
+      \ '| $$$\| $$ /      \  /      \|  \   /  \|  \|      \    \ ',
+      \ '| $$$$\ $$|  $$$$$$\|  $$$$$$\\$$\ /  $$| $$| $$$$$$\$$$$\',
+      \ '| $$\$$ $$| $$    $$| $$  | $$ \$$\  $$ | $$| $$ | $$ | $$',
+      \ '| $$ \$$$$| $$$$$$$$| $$__/ $$  \$$ $$  | $$| $$ | $$ | $$',
+      \ '| $$  \$$$ \$$     \ \$$    $$   \$$$   | $$| $$ | $$ | $$',
+      \ ' \$$   \$$  \$$$$$$$  \$$$$$$     \$     \$$ \$$  \$$  \$$',
+\]
+
 
