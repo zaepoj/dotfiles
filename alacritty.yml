@@ -49,7 +49,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background, but no title bar buttons
-  decorations: buttonless
+  decorations: transparent
 
   startup_mode: Maximized
 
@@ -77,20 +77,18 @@ scrolling:
 # Font configuration (changes require restart)
 font:
   normal:
-    family: "Menlo"
+    family: "Hack Nerd Font Mono"
     style: Regular
 
   bold:
-    family: "Menlo"
-    style: Bold
-
+    family: "Hack Nerd Font Mono"
 
   italic:
-    family: "Menlo"
+    family: "Hack Nerd Font Mono"
     style: Italic
 
   bold_italic:
-    family: "Menlo"
+    family: "Hack Nerd Font Mono"
     style: Bold Italic
   # Normal (roman) font face
   #normal:
@@ -230,7 +228,7 @@ bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.96
+  background_opacity: 0.95
 
 # Mouse bindings
 #
