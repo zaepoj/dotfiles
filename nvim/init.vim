@@ -17,6 +17,7 @@ Plug 'tami5/lspsaga.nvim', { 'branch': 'nvim51' }
 Plug 'onsails/lspkind-nvim'
 Plug 'mhinz/vim-startify'
 Plug 'itchyny/lightline.vim'
+Plug 'akinsho/bufferline.nvim'
 call plug#end()
 
 
@@ -24,6 +25,14 @@ call plug#end()
 set termguicolors
 colorscheme blue-moon
 
+lua << EOF
+require("bufferline").setup{
+  options = {
+      tab_size = 25,
+      diagnostics ="nvim_lsp",
+    }  
+}
+EOF
 
 let g:lightline = {
       \ 'colorscheme': 'blue-moon',
@@ -184,6 +193,7 @@ set laststatus=2                        " Always display the status line
 set number                              " Line numbers
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
+set showtabline=2
 
 
 "override theme colors
