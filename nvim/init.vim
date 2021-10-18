@@ -168,6 +168,11 @@ let g:nvim_tree_icons = {
 autocmd BufWritePre *.js Neoformat
 autocmd BufWritePre *.ts Neoformat
 
+
+
+
+
+
 :set number
 set noshowmode
 set mouse=a
@@ -214,5 +219,4 @@ let g:startify_custom_header = [
       \ '| $$  \$$$ \$$     \ \$$    $$   \$$$   | $$| $$ | $$ | $$',
       \ ' \$$   \$$  \$$$$$$$  \$$$$$$     \$     \$$ \$$  \$$  \$$',
 \]
-
 
