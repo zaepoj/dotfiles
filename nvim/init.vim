@@ -87,9 +87,7 @@ nnoremap <leader>n :NvimTreeFindFile<CR>
 nnoremap <leader>e :bn<CR>
 nnoremap <leader>q :bp<CR>
 nnoremap <leader>t :bd<CR>
-
-
-
+noremap <Leader>c "*y
 
 " nvim tree specific 
 
@@ -168,11 +166,6 @@ let g:nvim_tree_icons = {
 autocmd BufWritePre *.js Neoformat
 autocmd BufWritePre *.ts Neoformat
 
-
-
-
-
-
 :set number
 set noshowmode
 set mouse=a
@@ -219,4 +212,5 @@ let g:startify_custom_header = [
       \ '| $$  \$$$ \$$     \ \$$    $$   \$$$   | $$| $$ | $$ | $$',
       \ ' \$$   \$$  \$$$$$$$  \$$$$$$     \$     \$$ \$$  \$$  \$$',
 \]
+
 
