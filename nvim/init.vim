@@ -18,6 +18,7 @@ Plug 'onsails/lspkind-nvim'
 Plug 'mhinz/vim-startify'
 Plug 'itchyny/lightline.vim'
 Plug 'akinsho/bufferline.nvim'
+Plug 'LunarWatcher/auto-pairs'
 call plug#end()
 
 
