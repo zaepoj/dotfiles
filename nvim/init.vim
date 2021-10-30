@@ -92,6 +92,9 @@ nnoremap <leader>e :bn<CR>
 nnoremap <leader>q :bp<CR>
 nnoremap <leader>t :bd<CR>
 noremap <Leader>c "*y
+nnoremap ∆ :m .+1<CR>==
+nnoremap ˚ :m .-2<CR>==
+
 
 " nvim tree specific 
 
@@ -169,6 +172,7 @@ let g:nvim_tree_icons = {
 "prettier on save
 autocmd BufWritePre *.js Neoformat
 autocmd BufWritePre *.ts Neoformat
+autocmd BufWritePre *.tsx Neoformat
 
 :set number
 set noshowmode
