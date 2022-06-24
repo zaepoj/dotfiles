@@ -181,5 +181,25 @@
   {
     "key": "ctrl+w",
     "command": "-workbench.action.switchWindow"
+  },
+  {
+    "key": "alt+f",
+    "command": "fuzzySearch.activeTextEditor"
+  },
+  {
+    "key": "alt+d",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "alt+a",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "-workbench.action.previousEditor"
   }
 ]
