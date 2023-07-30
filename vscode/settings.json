@@ -1,24 +1,17 @@
 {
-  "git.confirmSync": false,
-  "git.autofetch": true,
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
   "extensions.ignoreRecommendations": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.renderWhitespace": "none",
-  //"editor.fontFamily": "JetBrainsMono-Bold",
   "editor.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "workbench.list.smoothScrolling": true,
-  "workbench.colorTheme": "poimandres",
-  "gitlens.gitCommands.closeOnFocusOut": true,
+  "workbench.colorTheme": "Visual Studio Dark",
   "git.suggestSmartCommit": false,
   "editor.minimap.enabled": false,
-  "breadcrumbs.enabled": false,
   "workbench.iconTheme": "city-lights-icons-vsc",
-  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/init.vim",
   "workbench.statusBar.visible": true,
   "autoHide.sideBarDelay": 50,
   "editor.cursorStyle": "line",
@@ -27,47 +20,10 @@
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
   "terminal.integrated.gpuAcceleration": "off",
-  "window.titleBarStyle": "native",
-  // "workbench.colorCustomizations": {
-  //   "editorLineNumber.foreground": "#6161619a",
-  //   "editorLineNumber.activeForeground": "#e17272",
-  //   "activityBar.background": "#282c34",
-  //   "titleBar.activeBackground": "#282c34",
-  //   "sideBar.background": "#282c34",
-  //   "tab.activeBackground": "#282c39",
-  //   "tab.inactiveBackground": "#282c34",
-  //   "sideBar.foreground": "#78889c",
-  //   "list.hoverBackground": "#93a9c4",
-  //   "editor.selectionBackground": "#787a8a",
-  //   "statusBar.background": "#282c34",
-  //   "statusBar.noFolderBackground": "#282c34",
-  //   "statusBar.debuggingBackground": "#282c34",
-  //   "merge.border": "#3b425200",
-  //   "merge.currentContentBackground": "#81a1c14d",
-  //   "merge.currentHeaderBackground": "#81a1c166",
-  //   "merge.incomingContentBackground": "#8fbcbb4d",
-  //   "merge.incomingHeaderBackground": "#8fbcbb66",
-  //   "editorGroupHeader.tabsBackground": "#2e3440",
-  //   "editorBracketMatch.background": "#352e50",
-  //   "editor.selectionHighlightBackground": "#352e50"
-  // },
   "vim.neovimConfigPath": "/usr/bin/nvim",
-  "editor.tokenColorCustomizations": {
-    "functions": "#989cb8"
-  },
-  //"vim.statusBarColors.normal": "#282c34",
-  //"vim.statusBarColors.insert": "#282c34",
-  // "vim.statusBarColors.visual": "#282c34",
-  // "vim.statusBarColors.visualblock": "#282c34",
-  // "vim.statusBarColors.visualline": "#282c34",
-  // "vim.statusBarColorControl": true,
-
   "typescript.tsserver.log": "off",
-  "customizeUI.titleBar": "inline",
-  "customizeUI.listRowHeight": 20,
-
   "workbench.activityBar.visible": false,
-  "editor.fontSize": 15,
+  "editor.fontSize": 19,
   "workbench.colorCustomizations": {
     "statusBar.background": "#282c34",
     "statusBar.noFolderBackground": "#282c34",
@@ -76,10 +32,43 @@
   "editor.copyWithSyntaxHighlighting": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.minimap.renderCharacters": false,
-  "editor.fontFamily": "Menlo",
+  "editor.fontFamily": "Satoshi regular",
   "vim.highlightedyank.duration": 500,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "rgba(250, 240, 170, 0.4)",
   "editor.guides.indentation": false,
-  "editor.bracketPairColorization.enabled": false
+  "editor.bracketPairColorization.enabled": false,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "window.zoomLevel": 1,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "apc.electron": {
+    "thickFrame": true,
+    "roundedCorners": false,
+    "frame": false,
+  },
+  "apc.header": {
+    "height": 20,
+    "fontSize": 11
+  },
+  "apc.listRow": {
+    "height": 20,
+    "fontSize": 11
+  },
+  "apc.menubar.compact": true,
+  "apc.statusBar": {
+    "position": "bottom",
+    "height": 30,
+    "fontSize": 16
+  },
+  "workbench.editor.showTabs": true,
+  "breadcrumbs.enabled": false,
+  "window.titleBarStyle": "native",
 }
