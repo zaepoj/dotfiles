@@ -8,7 +8,7 @@
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "workbench.list.smoothScrolling": true,
-  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.colorTheme": "poimandres-noitalics-storm",
   "git.suggestSmartCommit": false,
   "editor.minimap.enabled": false,
   "workbench.iconTheme": "city-lights-icons-vsc",
@@ -24,6 +24,7 @@
   "typescript.tsserver.log": "off",
   "workbench.activityBar.visible": false,
   "editor.fontSize": 19,
+  "editor.lineHeight": 1.618,
   "workbench.colorCustomizations": {
     "statusBar.background": "#282c34",
     "statusBar.noFolderBackground": "#282c34",
@@ -32,7 +33,7 @@
   "editor.copyWithSyntaxHighlighting": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.minimap.renderCharacters": false,
-  "editor.fontFamily": "Satoshi regular",
+  "editor.fontFamily": "Zed Mono regular",
   "vim.highlightedyank.duration": 500,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "rgba(250, 240, 170, 0.4)",
@@ -50,9 +51,8 @@
     "scminput": false
   },
   "apc.electron": {
-    "thickFrame": true,
+    "titleBarStyle": "customButtonsOnHover",
     "roundedCorners": false,
-    "frame": false,
   },
   "apc.header": {
     "height": 20,
@@ -71,4 +71,7 @@
   "workbench.editor.showTabs": true,
   "breadcrumbs.enabled": false,
   "window.titleBarStyle": "native",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
 }
