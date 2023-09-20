@@ -34,6 +34,9 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.minimap.renderCharacters": false,
   "editor.fontFamily": "Zed Mono regular",
+  "editor.inlayHints.fontFamily": "Zed Mono regular",
+  
+
   "vim.highlightedyank.duration": 500,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "rgba(250, 240, 170, 0.4)",
@@ -55,19 +58,26 @@
     "roundedCorners": false,
   },
   "apc.header": {
-    "height": 20,
-    "fontSize": 11
+    "height": 25,
+    "fontSize": 12
   },
   "apc.listRow": {
     "height": 20,
     "fontSize": 11
   },
   "apc.menubar.compact": true,
+  "apc.stylesheet": {
+    ".editor .title": "background: transparent !important;",
+    ".editor .title-border-bottom": "visibility: hidden !important;",
+  },
+
   "apc.statusBar": {
     "position": "bottom",
     "height": 30,
     "fontSize": 16
   },
+  "apc.font.family": "Zed Mono",
+  "apc.monospace.font.family": "Zed Mono",
   "workbench.editor.showTabs": true,
   "breadcrumbs.enabled": false,
   "window.titleBarStyle": "native",
