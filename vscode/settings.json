@@ -1,4 +1,6 @@
 {
+  "git.confirmSync": false,
+  "git.autofetch": true,
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
@@ -8,7 +10,7 @@
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "workbench.list.smoothScrolling": true,
-  "workbench.colorTheme": "poimandres-noitalics-storm",
+  "gitlens.gitCommands.closeOnFocusOut": true,
   "git.suggestSmartCommit": false,
   "editor.minimap.enabled": false,
   "workbench.iconTheme": "city-lights-icons-vsc",
@@ -24,29 +26,34 @@
   "typescript.tsserver.log": "off",
   "workbench.activityBar.visible": false,
   "editor.fontSize": 19,
-  "editor.lineHeight": 1.618,
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#282c34",
-    "statusBar.noFolderBackground": "#282c34",
-    "statusBar.debuggingBackground": "#282c34"
-  },
   "editor.copyWithSyntaxHighlighting": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
   "editor.minimap.renderCharacters": false,
-  "editor.fontFamily": "Zed Mono regular",
-  "editor.inlayHints.fontFamily": "Zed Mono regular",
-  
-
   "vim.highlightedyank.duration": 500,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "rgba(250, 240, 170, 0.4)",
   "editor.guides.indentation": false,
   "editor.bracketPairColorization.enabled": false,
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
-  },
-  "window.zoomLevel": 1,
+  "git.mergeEditor": false,
+  "tabnine.experimentalAutoImports": true,
+  "editor.fontFamily": "Zed mono regular",
+  "editor.lineHeight": 1.618,
+  "workbench.fontAliasing": "antialiased",
+  "editor.fontWeight": "500",
+  "workbench.layoutControl.enabled": false,
+  "editor.accessibilitySupport": "off",
+  "gitlens.views.commitDetails.files.layout": "tree",
+  "atlascode.bitbucket.enabled": true,
+  "atlascode.jira.enabled": false,
   "editor.inlineSuggest.enabled": true,
+  "atlascode.bitbucket.pipelines.monitorEnabled": false,
+  "atlascode.bitbucket.pipelines.explorerEnabled": false,
+  "atlascode.bitbucket.statusbar.showUser": true,
+  "atlascode.bitbucket.statusbar.showProduct": true,
+  "atlascode.bitbucket.statusbar.enabled": true,
+  "workbench.colorTheme": "poimandres-noitalics-storm",
+  "explorer.autoReveal": true,
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
@@ -54,34 +61,49 @@
     "scminput": false
   },
   "apc.electron": {
-    "titleBarStyle": "customButtonsOnHover",
-    "roundedCorners": false,
+    "titleBarStyle": "hiddenInset",
+    "frame": false,
+    "vibrancy": "sidebar",
+    "visualEffectState": "active",
+    "transparent": true,
+    "backgroundColor": "rgba(0,0,0,0)",
+    "roundedCorners": false
   },
   "apc.header": {
-    "height": 25,
+    "height": 30,
     "fontSize": 12
   },
   "apc.listRow": {
-    "height": 20,
-    "fontSize": 11
-  },
-  "apc.menubar.compact": true,
-  "apc.stylesheet": {
-    ".editor .title": "background: transparent !important;",
-    ".editor .title-border-bottom": "visibility: hidden !important;",
+    "height": 25,
+    "fontSize": 16
   },
 
+  "apc.menubar.compact": true,
   "apc.statusBar": {
     "position": "bottom",
     "height": 30,
-    "fontSize": 16
+    "fontSize": 14
   },
-  "apc.font.family": "Zed Mono",
-  "apc.monospace.font.family": "Zed Mono",
   "workbench.editor.showTabs": true,
   "breadcrumbs.enabled": false,
   "window.titleBarStyle": "native",
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
+  "apc.stylesheet": {
+    "#workbench\\.parts\\.sidebar > .composite.title": "opacity: 0; pointer-events: none",
+    ".title.tabs.title-border-bottom .tabs-container": "cursor: default; -webkit-app-region: no-drag;",
+    ".editor-actions": "display: none;",
+    ".monaco-list-rows": "background-color: transparent !important;",
+    ".nosidebar .tabs": "padding-left: 80px;",
+    ".scrollbar": " width: 10px !important",
+    ".scrollbar .slider": "border-radius: 6px; width: calc(100% - 2px) !important;",
+    ".editor .title": "background: transparent !important;",
+    ".editor .title-border-bottom": "visibility: hidden !important;"
   },
+  "yaml.schemas": {
+    "file:///Users/henrilahti/.vscode/extensions/atlassian.atlascode-3.0.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "editor.stickyScroll.enabled": true,
+  "window.zoomLevel": 1,
+  "editor.inlayHints.fontFamily": "Zed Mono regular",
+  "apc.font.family": "Zed Mono",
+  "apc.monospace.font.family": "Zed Mono"
 }
