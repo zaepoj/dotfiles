@@ -201,5 +201,18 @@
   {
     "key": "shift+cmd+[",
     "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "alt+escape",
+    "command": "workbench.action.openPreviousEditorFromHistory"
+  },
+  {
+    "key": "ctrl+7",
+    "command": "workbench.action.navigateForwardInEditLocations"
+  },
+  {
+    "key": "alt+escape",
+    "command": "workbench.action.quickOpenNavigateNext",
+    "when": "inQuickOpen"
   }
 ]
