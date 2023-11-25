@@ -7,9 +7,7 @@
   "extensions.ignoreRecommendations": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.renderWhitespace": "none",
-  "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
-  "workbench.list.smoothScrolling": true,
   "gitlens.gitCommands.closeOnFocusOut": true,
   "git.suggestSmartCommit": false,
   "editor.minimap.enabled": false,
@@ -29,15 +27,7 @@
 
   "typescript.tsserver.log": "off",
   "workbench.activityBar.visible": false,
-  "editor.fontSize": 20,
-  // "workbench.colorCustomizations": {
-  //   "statusBar.background": "#1e1e1e",
-  //   "statusBar.noFolderBackground": "#282c34",
-  //   "statusBar.debuggingBackground": "#282c34",
-  //   "editorGroupHeader.tabsBackground": "#1e1e1e",
-  //   "tab.inactiveBackground": "#1e1e1e",
-  //   "editorGroup.border": "#1e1e1e"
-  // },
+  "editor.fontSize": 16,
   "workbench.colorCustomizations": {
     "editorSuggestWidget.background": "#344255",
 
@@ -55,6 +45,7 @@
     "tab.activeBorder": "#ff000000",
     "tab.activeBackground": "#252b37"
   },
+  "workbench.editor.tabCloseButton": "off",
   "editor.copyWithSyntaxHighlighting": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
@@ -66,10 +57,10 @@
   "editor.bracketPairColorization.enabled": false,
   "git.mergeEditor": false,
   "tabnine.experimentalAutoImports": true,
-  "editor.fontFamily": "Zed mono",
+  "editor.fontFamily": "'IBM Plex Mono'",
   "editor.lineHeight": 1.618,
   "workbench.fontAliasing": "antialiased",
-  "editor.fontWeight": "500",
+  // "editor.fontWeight": "500",
   "workbench.layoutControl.enabled": false,
   "editor.accessibilitySupport": "off",
   "gitlens.views.commitDetails.files.layout": "tree",
@@ -81,12 +72,12 @@
   "atlascode.bitbucket.statusbar.showUser": true,
   "atlascode.bitbucket.statusbar.showProduct": true,
   "atlascode.bitbucket.statusbar.enabled": true,
-  "workbench.colorTheme": "poimandres-noitalics-storm",
+  "workbench.colorTheme": "Monochrome Dark Cool Gray",
   "explorer.autoReveal": true,
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
-    "markdown": false,
+    "markdown": "true",
     "scminput": false
   },
   "apc.electron": {
@@ -112,7 +103,6 @@
     "fontSize": 16
   },
   "workbench.editor.showTabs": true,
-  "breadcrumbs.enabled": false,
   "window.titleBarStyle": "native",
   "apc.imports": ["/Users/henrilahti/.vscode/resize-quickinput-widget.js"],
   "apc.stylesheet": {
@@ -123,19 +113,27 @@
     ".scrollbar": " width: 10px !important",
     ".scrollbar .slider": "border-radius: 6px; width: calc(100% - 2px) !important;",
     ".suggest-widget": "border-radius: 8px !important; width: 600px !important;",
-    ".tab": "border: 1px solid #353d4b !important; border-top: 0px !important;",
+    ".tab": "border: 1px solid #1a2238 !important; border-top: 0px !important; border-bottom: 0px",
     ".tab:first-child": "border-left: 0px !important;",
     ".tab:last-child": "border-right: 0px !important;",
-    ".tab.active": "border-bottom: 1px solid #ff000000 !important;"
+    ".tab.active": "border-bottom: 1px solid #111827 !important;"
   },
   "yaml.schemas": {
     "file:///Users/henrilahti/.vscode/extensions/atlassian.atlascode-3.0.7/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "editor.stickyScroll.enabled": true,
-  "window.zoomLevel": 1,
   "update.mode": "manual",
   "chaliceIcons.showArrows": true,
-  "apc.font.family": "Zed Mono",
-  "apc.monospace.font.family": "Zed Mono",
-  "window.density.editorTabHeight": "compact"
+  "apc.font.family": "'IBM Plex Mono'",
+  "apc.monospace.font.family": "'IBM Plex Mono'",
+  "window.density.editorTabHeight": "compact",
+  "editor.cursorBlinking": "solid",
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.smoothScrolling": true,
+  "terminal.integrated.env.osx": {
+    "CW_NEW_SESSION": "1",
+    "FIG_NEW_SESSION": "1"
+  },
+  "window.zoomLevel": 1
 }
