@@ -16,3 +16,9 @@ install: https://github.com/koekeishiya/skhd
 
 ### Hidden bar
 https://github.com/dwarvesf/hidden
+
+### TMUX
+install: https://github.com/tmux/tmux/wiki/Installing
+#### TPM
+https://github.com/tmux-plugins/tpm
+
