@@ -11,3 +11,8 @@ install: https://github.com/koekeishiya/yabai
 # Hotkeys - skhd
 install: https://github.com/koekeishiya/skhd
 
+
+## Other
+
+### Hidden bar
+https://github.com/dwarvesf/hidden
