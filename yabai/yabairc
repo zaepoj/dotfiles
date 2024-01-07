@@ -48,11 +48,11 @@ yabai -m config layout bsp
 yabai -m config window_placement second_child
 
 #Paddings
-yabai -m config top_padding 30	
-yabai -m config bottom_padding 12	
-yabai -m config left_padding 12	
-yabai -m config right_padding 12	
-yabai -m config window_gap 12	
+yabai -m config top_padding 20
+yabai -m config bottom_padding 20
+yabai -m config left_padding 20
+yabai -m config right_padding 20
+yabai -m config window_gap 20
 
 
 #Mouse settings
@@ -66,10 +66,13 @@ yabai -m config mouse_action2 resize
 yabai -m config mouse_drop_action swap
 
 
+# Other
+
 # Disabled apps
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^Steam$" manage=off
 
 osascript -e 'tell application id "tracesOf.Uebersicht" to refresh'
 
