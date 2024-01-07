@@ -21,4 +21,8 @@ https://github.com/dwarvesf/hidden
 install: https://github.com/tmux/tmux/wiki/Installing
 #### TPM
 https://github.com/tmux-plugins/tpm
+#### TMUX - theme
+https://github.com/catppuccin/tmux
 
+### iTerm2 - theme
+https://github.com/catppuccin/iterm/tree/main
