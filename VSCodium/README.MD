@@ -16,4 +16,5 @@ brew install --cask vscodium
 - Tailwind CSS IntelliSense
 - VSCode Neovim
 - Auto Hide (via .vsix file)
+- Github copilot (via .vsix file. Check details here: https://github.com/VSCodium/vscodium/discussions/1487)
 
