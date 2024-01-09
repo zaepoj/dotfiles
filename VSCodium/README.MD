@@ -15,4 +15,5 @@ brew install --cask vscodium
 - Prisma
 - Tailwind CSS IntelliSense
 - VSCode Neovim
+- Auto Hide (via .vsix file)
 
