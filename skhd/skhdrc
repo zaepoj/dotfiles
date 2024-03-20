@@ -107,69 +107,67 @@
 
 
 # Changing window focus
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-alt - h : yabai -m window --focus west
-alt - l : yabai -m window --focus east
+ctrl - j : yabai -m window --focus south
+ctrl - k : yabai -m window --focus north
+ctrl - h : yabai -m window --focus west
+ctrl - l : yabai -m window --focus east
 
 
 # Change focus on monitors
-alt - s: yabai -m display --focus west
-alt - g: yabai -m display --focus east
-
+# cmd - s: yabai -m display --focus west
+# cmd - g: yabai -m display --focus east
 
 # Layout
 
 # Rotate clockwise
-shift + alt - r : yabai -m space --rotate 270
+shift + ctrl - r : yabai -m space --rotate 270
 
 # Flip aong y-axis
-shift + alt - y : yabai -m space --mirror y-axis
+shift + ctrl - y : yabai -m space --mirror y-axis
 
 # Fip along x-axis
-shift + alt - x : yabai -m space --mirror x-axis
+shift + ctrl - x : yabai -m space --mirror x-axis
 
 # Toggle window float
-shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+shift + ctrl - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 
 
 # Window sizing
-shift + alt - m : yabai -m window --toggle zoom-fullscreen
+shift + ctrl - m : yabai -m window --toggle zoom-fullscreen
 
 # Change size of focused window
-ctrl + alt - h : yabai -m window --resize right:-20:0 2> /dev/null || yabai -m window --resize left:-20:0 2> /dev/null
-ctrl + alt - j : yabai -m window --resize bottom:0:20 2> /dev/null || yabai -m window --resize top:0:20 2> /dev/null
-ctrl + alt - k : yabai -m window --resize bottom:0:-20 2> /dev/null || yabai -m window --resize top:0:-20 2> /dev/null
-ctrl + alt - l : yabai -m window --resize right:20:0 2> /dev/null || yabai -m window --resize left:20:0 2> /dev/null
+ctrl + shift - h : yabai -m window --resize right:-20:0 2> /dev/null || yabai -m window --resize left:-20:0 2> /dev/null
+ctrl + shift - j : yabai -m window --resize bottom:0:20 2> /dev/null || yabai -m window --resize top:0:20 2> /dev/null
+ctrl + shift - k : yabai -m window --resize bottom:0:-20 2> /dev/null || yabai -m window --resize top:0:-20 2> /dev/null
+ctrl + shift - l : yabai -m window --resize right:20:0 2> /dev/null || yabai -m window --resize left:20:0 2> /dev/null
 
 
 # Swap windows
-shift + alt -j : yabai -m window --swap south
-shift + alt -k : yabai -m window --swap north
-shift + alt -h : yabai -m window --swap west
-shift + alt -l : yabai -m window --swap east
+shift + cmd -j : yabai -m window --swap south
+shift + cmd -k : yabai -m window --swap north
+shift + cmd -h : yabai -m window --swap west
+shift + cmd -l : yabai -m window --swap east
 
 # Move window to display left and right
-shift + alt -s : yabai -m window --display west; yabai -m display --focus west;
-shift + alt -g : yabai -m window --display east; yabai -m display --focus east;
+#shift + cmd -s : yabai -m window --display west; yabai -m display --focus west;
+#shift + cmd -g : yabai -m window --display east; yabai -m display --focus east;
 
 
 # Move window to prev and next space
-shift + alt - p : yabai -m window --space prev;
-shift + alt - n : yabai -m window --space next;
+# shift + cmd - p : yabai -m window --space prev;
+# shift + cmd - n : yabai -m window --space next;
 
 
 # move window to space #
-shift + alt - 1 : yabai -m window --space 1;
-shift + alt - 2 : yabai -m window --space 2;
-shift + alt - 3 : yabai -m window --space 3;
-shift + alt - 4 : yabai -m window --space 4;
-shift + alt - 5 : yabai -m window --space 5;
-shift + alt - 6 : yabai -m window --space 6;
-shift + alt - 7 : yabai -m window --space 7;
+shift + ctrl - 1 : yabai -m window --space 1;
+shift + ctrl - 2 : yabai -m window --space 2;
+shift + ctrl - 3 : yabai -m window --space 3;
+shift + ctrl - 4 : yabai -m window --space 4;
+shift + ctrl - 5 : yabai -m window --space 5;
+shift + ctrl - 6 : yabai -m window --space 6;
+shift + ctrl - 7 : yabai -m window --space 7;
 
-# start and stop yabai
-ctrl + alt - q : brew services stop yabai
-ctrl + alt - s : brew services start yabai
-
+# # start and stop yabai
+# ctrl + cmd - q : brew services stop yabai
+# ctrl + cmd - s : brew services start yabai
