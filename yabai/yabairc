@@ -72,9 +72,11 @@ yabai -m config mouse_drop_action swap
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app=Finder manage=off
 yabai -m rule --add app="^Steam$" manage=off
+yabai -m rule --add app="^Code Whisperer$" manage=off
 
-osascript -e 'tell application id "tracesOf.Uebersicht" to refresh'
+# osascript -e 'tell application id "tracesOf.Uebersicht" to refresh'
 
 
 echo "yabai configuration loaded..
