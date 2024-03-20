@@ -10,13 +10,11 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "gitlens.gitCommands.closeOnFocusOut": true,
   "git.suggestSmartCommit": false,
-  "editor.minimap.enabled": false,
   "workbench.iconTheme": "chalice-icon-theme",
   "workbench.statusBar.visible": true,
   "autoHide.sideBarDelay": 50,
   "editor.cursorStyle": "line",
   "editor.insertSpaces": false,
-  "editor.lineNumbers": "on",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
   "terminal.integrated.gpuAcceleration": "off",
@@ -71,7 +69,6 @@
   "atlascode.bitbucket.statusbar.showUser": true,
   "atlascode.bitbucket.statusbar.showProduct": true,
   "atlascode.bitbucket.statusbar.enabled": true,
-  "workbench.colorTheme": "Monochrome Dark Cool Gray",
   "explorer.autoReveal": true,
   "github.copilot.enable": {
     "*": true,
@@ -125,6 +122,7 @@
   "chaliceIcons.showArrows": true,
   "apc.font.family": "'IBM Plex Mono'",
   "apc.monospace.font.family": "'IBM Plex Mono'",
+  "window.density.editorTabHeight": "compact",
   "editor.cursorBlinking": "solid",
   "workbench.list.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
@@ -133,11 +131,14 @@
     "CW_NEW_SESSION": "1",
     "FIG_NEW_SESSION": "1"
   },
-  "window.zoomLevel": 1,
-  "window.density.editorTabHeight": "compact",
   "workbench.activityBar.location": "hidden",
   "workbench.editor.tabActionCloseVisibility": false,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
-  }
+  },
+  "workbench.colorTheme": "Monochrome Dark Cool Gray",
+  "window.zoomLevel": 1,
+  "zenMode.hideLineNumbers": false,
+  "window.commandCenter": false,
+  "editor.minimap.enabled": false
 }
