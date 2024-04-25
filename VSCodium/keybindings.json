@@ -206,10 +206,7 @@
     "key": "cmd+escape",
     "command": "workbench.action.openPreviousEditorFromHistory"
   },
-  {
-    "key": "ctrl+7",
-    "command": "workbench.action.navigateForwardInEditLocations"
-  },
+
   {
     "key": "cmd+escape",
     "command": "workbench.action.quickOpenNavigateNext",
@@ -296,5 +293,17 @@
   {
     "key": "cmd+b",
     "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+shift+.",
+    "command": "workbench.action.navigateForwardInEditLocations"
+  },
+  {
+    "key": "alt+e",
+    "command": "workbench.action.navigateForwardInNavigationLocations"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "workbench.action.navigateBackInEditLocations"
   }
 ]
