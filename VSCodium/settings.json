@@ -20,7 +20,8 @@
   "terminal.integrated.gpuAcceleration": "off",
   "vim.neovimConfigPath": "/usr/bin/nvim",
   "editor.tokenColorCustomizations": {
-    "functions": "#989cb8"
+    "functions": "#989cb8",
+    "comments": "#515674"
   },
 
   "typescript.tsserver.log": "off",
@@ -136,7 +137,7 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "workbench.colorTheme": "Monochrome Dark Cool Gray",
+  "workbench.colorTheme": "Monochrome Dark Subtle",
   "window.zoomLevel": 1,
   "zenMode.hideLineNumbers": false,
   "window.commandCenter": false,
