@@ -17,6 +17,9 @@
   "editor.insertSpaces": false,
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
   "terminal.integrated.gpuAcceleration": "off",
   "vim.neovimConfigPath": "/usr/bin/nvim",
   "editor.tokenColorCustomizations": {
@@ -27,6 +30,7 @@
   "typescript.tsserver.log": "off",
   "editor.fontSize": 16,
   "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#272424",
     "editorSuggestWidget.background": "#344255",
 
     // the first line in your gif is selected
@@ -137,8 +141,7 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "workbench.colorTheme": "Monochrome Dark Subtle",
-  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Monochrome Dark Amplified",
   "zenMode.hideLineNumbers": false,
   "window.commandCenter": false,
   "editor.minimap.enabled": false
