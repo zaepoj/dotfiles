@@ -17,55 +17,235 @@
   "editor.insertSpaces": false,
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
-  "vim.neovimConfigPath": "/usr/bin/nvim",
-  "editor.tokenColorCustomizations": {
-    "functions": "#9a9797",
-    "comments": "#515674"
-  },
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "typescript.tsserver.log": "off",
-  "editor.fontSize": 16,
-  "workbench.colorCustomizations": {
-    "scrollbarSlider.background": "#282525",
-    "scrollbarSlider.hoverBackground": "#252121",
-    "scrollbarSlider.activeBackground": "#252121",
-    "editor.selectionBackground": "#272424",
+  "terminal.integrated.gpuAcceleration": "off",
+  "vim.neovimConfigPath": "/usr/bin/nvim",
+  "editor.tokenColorCustomizations": {
+    // "functions": "#ffffff",
+    // "numbers": "#ffffff",
+    "comments": "#666666",
+    // "keywords": "#a7a7a7",
+    // "variables": "#ffffff",
+    
+    
+    "textMateRules": [
+      {
+        "scope": "keyword",
+        "settings": {
+          "foreground": "#a7a7a7",
+        }
+      },
+      {
+        "scope": "constant",
+        "settings": {
+          "foreground": "#ffffff",
+        }
+      },
+      {
+        "scope": "constant.numeric",
+        "settings": {
+          "foreground": "#ffffff",
+        }
+      },
+      {
+        "scope": "punctuation.section.embedded",
+        "settings": {
+          "foreground": "#a7a7a7",
+        }
+      },
+      {
+        "scope": "keyword.operator",
+        "settings": {
+          "foreground": "#ffffff",
+        }
+      },
+      {
+        "scope": " keyword.operator.new",
+        "settings": {
+          "foreground": "#a7a7a7",
+        }
+      },
+      {
+        "scope": "meta.object-literal.key",
+        "settings": {
+          "foreground": "#ffffff",
+        }
+      },
+      {
+        "scope": "meta.var.expr",
+        "settings": {
+          "foreground": "#ffffff",
+        }
+      },
+      {
+        "scope": "meta.block",
+        "settings": {
+          "foreground": "#a7a7a7",
+        }
+      },
+      {
+        "scope": "meta.block, meta.jsx.children",
+        "settings": {
+          "foreground": "#ffffff",
+        }
+      },
+      {
+        "scope": "meta.brace.round",
+        "settings": {
+          "foreground": "#a7a7a7",
+        }
+      },
+      
+      {
+        "scope": "meta.type.declaration",
+        "settings": {
+          "foreground": "#ffffff",
+        }
+      },
+      {
+        "scope": "meta.interface",
+        "settings": {
+          "foreground": "#ffffff",
+        }
+      },
+      {
+        "scope": "meta.type.annotation",
+        "settings": {
+          "foreground": "#ffffff",
+        }
+      },
+      {
+        "scope": "support.type.builtin ",
+        "settings": {
+          "foreground": "#a7a7a7",
+        }
+      },
+      {
+        "scope": "meta.type.parameters",
+        "settings": {
+          "foreground": "#ffffff",
+        }
+      },
+      {
+        "scope": "storage.type.function.arrow",
+        "settings": {
+          "foreground": "#ffffff",
+        }
+      },
+      
+      {
+        "scope": "string",
+        "settings": {
+          "foreground": "#a7a7a7",
+        }
+      },
+      {
+        "scope": "storage",
+        "settings": {
+          "foreground": "#a7a7a7",
+        }
+      },
+      
+      {
+        "scope": "entity.name.tag",
+        "settings": {
+          "foreground": "#ffffff",
+        }
+      },
+      {
+        "scope": "entity.other.attribute-name",
+        "settings": {
+          "foreground": "#ffffff",
+        }
+      },
+      {
+        "scope": "meta.var.expr.js storage",
+        "settings": {
+          "foreground": "#A7A7A7"
+        }
+      },
+      {
+        "scope": "meta.class.js storage",
+        "settings": {
+          "foreground": "#A7A7A7"
+        }
+      },
+      {
+        "scope": "meta.function.js storage",
+        "settings": {
+          "foreground": "#A7A7A7"
+        }
+      },
+      {
+        "scope": "meta.method.declaration.js storage",
+        "settings": {
+          "foreground": "#ffffff"
+        }
+      },
+      {
+        "scope": "variable",
+        "settings": {
+          "foreground": "#FFFFFF"
+        }
+      }, 
+      {
+        "scope": "entity.name.function",
+        "settings": {
+          "foreground": "#FFFFFF"
+        }
+      },
+      {
+        "scope": "support.class, entity.name.class, entity.name.type.class",
+        "settings": {
+          "foreground": "#ffffff"
+        }
+      },
+    ]
+    
+  },
 
-    // "editorSuggestWidget.background": "#344255",
-    // "editor.foldBackground": "#ff0000",
-    "editorGutter.foldingControlForeground": "#e2cfcf",
-    "editorGutter.addedBackground": "#9effa139",
-    "gitlens.trailingLineForegroundColor": "#5e5757",
-    "editorLineNumber.foreground": "#434242",
-    "editorLineNumber.activeForeground": "#937c7c",
+  "typescript.tsserver.log": "off",
+  "editor.fontSize": 15,
+  "workbench.colorCustomizations": {
+    "editor.foreground": "#ffffff",
+    "editor.selectionBackground": "#272424",
+    "editorSuggestWidget.background": "#344255",
 
     // the first line in your gif is selected
-    // "editorSuggestWidget.selectedBackground": "#485669",
+    "editorSuggestWidget.selectedBackground": "#485669",
 
     // the letters you have typed  to bring up intellisense: 'bg' in your example
-    // "editorSuggestWidget.highlightForeground": "#97f4e2",
+    "editorSuggestWidget.highlightForeground": "#97f4e2",
 
     // 'bg' in a selected entry
-    // "editorSuggestWidget.focusHighlightForeground": "#97f4e2",
+    "editorSuggestWidget.focusHighlightForeground": "#97f4e2",
 
     "editorSuggestWidget.foreground": "#fff", // the text color
     //Transparent border
     "tab.activeBorder": "#ff000000",
-    "tab.activeBackground": "#252b37"
+    "tab.activeBackground": "#252b37",
+    "tab.inactiveBackground": "#0f0f0f",
+    "quickInput.background": "#101010",
+    "editor.background": "#0f0f0f",
+    "editorLineNumber.foreground": "#ffffff20",
+    "editorLineNumber.activeForeground": "#ffffff90",
+    
+    
   },
   "workbench.editor.tabCloseButton": "off",
-  "editor.copyWithSyntaxHighlighting": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.minimap.renderCharacters": false,
   "editor.guides.indentation": false,
   "editor.bracketPairColorization.enabled": false,
   "git.mergeEditor": false,
+  "tabnine.experimentalAutoImports": true,
   "editor.fontFamily": "'IBM Plex Mono'",
-  // "editor.lineHeight": 1.618,
+  "editor.lineHeight": 1.618,
   // "workbench.fontAliasing": "antialiased",
+  "editor.fontWeight": "400",
   "workbench.layoutControl.enabled": false,
   "editor.accessibilitySupport": "off",
   "gitlens.views.commitDetails.files.layout": "tree",
@@ -90,7 +270,7 @@
     "vibrancy": "sidebar",
     "visualEffectState": "active",
     "transparent": true,
-    "backgroundColor": "rgba(0,0,0,0)"
+    // "backgroundColor": "rgb(15,15,15)"
   },
   "apc.header": {
     "height": 50,
@@ -121,6 +301,7 @@
     ".tab:first-child": "border-left: 0px !important;",
     ".tab:last-child": "border-right: 0px !important;",
     ".tab.active": "border-bottom: 1px solid #111827 !important;"
+    
   },
   "yaml.schemas": {
     "file:///Users/henrilahti/.vscode/extensions/atlassian.atlascode-3.0.7/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
@@ -134,29 +315,19 @@
   "editor.cursorBlinking": "solid",
   "workbench.list.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
-  "editor.smoothScrolling": false,
-  // "editor.mouseWheelScrollSensitivity": 1.5,
+  "editor.smoothScrolling": true,
   "terminal.integrated.env.osx": {
     "CW_NEW_SESSION": "1",
-    "FIG_NEW_SESSION": "1",
-    "Q_NEW_SESSION": "1"
+    "FIG_NEW_SESSION": "1"
   },
   "workbench.activityBar.location": "hidden",
   "workbench.editor.tabActionCloseVisibility": false,
-  // "extensions.experimental.affinity": {
-  //   "asvetliakov.vscode-neovim": 1
-  // },
-  "workbench.colorTheme": "Monochrome Dark",
-  "zenMode.hideLineNumbers": false,
-  "window.commandCenter": false,
-  "editor.minimap.enabled": false,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "breadcrumbs.enabled": false,
-  "breadcrumbs.icons": false,
-  "editor.find.addExtraSpaceOnTop": false,
-  "terminal.integrated.fontWeight": "300"
-  // "vscode-neovim.mouseSelectionDebounceTime": 0
-  // "vscode-neovim.normalSelectionDebounceTime": 20
+  "workbench.colorTheme": "Monochrome Dark Amplified",
+  "zenMode.hideLineNumbers": false,
+  "window.commandCenter": false,
+  "editor.minimap.enabled": false,
+  "prisma.showPrismaDataPlatformNotification": false
 }
