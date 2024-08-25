@@ -209,6 +209,9 @@
   "typescript.tsserver.log": "off",
   "editor.fontSize": 15,
   "workbench.colorCustomizations": {
+    "scrollbarSlider.background": "#282525",
+    "scrollbarSlider.hoverBackground": "#252121",
+    "scrollbarSlider.activeBackground": "#252121",
     "editor.foreground": "#ffffff",
     "editor.selectionBackground": "#272424",
     "editorSuggestWidget.background": "#344255",
