@@ -26,3 +26,6 @@ https://github.com/catppuccin/tmux
 
 ### iTerm2 - theme
 https://github.com/catppuccin/iterm/tree/main
+
+### Borders
+https://github.com/FelixKratz/JankyBorders
