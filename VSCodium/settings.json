@@ -23,141 +23,188 @@
   "terminal.integrated.gpuAcceleration": "off",
   "vim.neovimConfigPath": "/usr/bin/nvim",
   "editor.tokenColorCustomizations": {
-    // "functions": "#ffffff",
-    // "numbers": "#ffffff",
+    // "functions": "#f0f0f0",
+    // "numbers": "#f0f0f0",
     "comments": "#666666",
     // "keywords": "#a7a7a7",
-    // "variables": "#ffffff",
-    
-    
+    // "variables": "#f0f0f0",
+
     "textMateRules": [
       {
         "scope": "keyword",
         "settings": {
-          "foreground": "#a7a7a7",
+          "foreground": "#a7a7a7"
         }
       },
       {
         "scope": "constant",
         "settings": {
-          "foreground": "#ffffff",
+          "foreground": "#ffffff"
+        }
+      },
+      {
+        "scope": "punctuation.definition.block",
+        "settings": {
+          "foreground": "#a7a7a7"
+        }
+      },
+      {
+        "scope": "meta.pun.undefined",
+        "settings": {
+          "foreground": "#a7a7a7"
+        }
+      },
+      {
+        "scope": "constant.language.null",
+        "settings": {
+          "foreground": "#a7a7a7"
+        }
+      },
+      {
+        "scope": "support.type.primitive",
+        "settings": {
+          "foreground": "#a7a7a7"
         }
       },
       {
         "scope": "constant.numeric",
         "settings": {
-          "foreground": "#ffffff",
+          "foreground": "#ffffff"
         }
       },
       {
         "scope": "punctuation.section.embedded",
         "settings": {
-          "foreground": "#a7a7a7",
+          "foreground": "#a7a7a7"
         }
       },
       {
         "scope": "keyword.operator",
         "settings": {
-          "foreground": "#ffffff",
+          "foreground": "#ffffff"
         }
       },
       {
         "scope": " keyword.operator.new",
         "settings": {
-          "foreground": "#a7a7a7",
+          "foreground": "#a7a7a7"
+        }
+      },
+      {
+        "scope": "keyword.operator.ternary",
+        "settings": {
+          "foreground": "#a7a7a7"
+        }
+      },
+      {
+        "scope": "punctuation.accessor.optional",
+        "settings": {
+          "foreground": "#a7a7a7"
         }
       },
       {
         "scope": "meta.object-literal.key",
         "settings": {
-          "foreground": "#ffffff",
+          "foreground": "#ffffff"
         }
       },
       {
         "scope": "meta.var.expr",
         "settings": {
-          "foreground": "#ffffff",
+          "foreground": "#ffffff"
         }
       },
       {
         "scope": "meta.block",
         "settings": {
-          "foreground": "#a7a7a7",
+          "foreground": "#a7a7a7"
         }
       },
       {
         "scope": "meta.block, meta.jsx.children",
         "settings": {
-          "foreground": "#ffffff",
+          "foreground": "#ffffff"
         }
       },
       {
         "scope": "meta.brace.round",
         "settings": {
-          "foreground": "#a7a7a7",
+          "foreground": "#a7a7a7"
         }
       },
-      
+
       {
         "scope": "meta.type.declaration",
         "settings": {
-          "foreground": "#ffffff",
+          "foreground": "#ffffff"
         }
       },
       {
         "scope": "meta.interface",
         "settings": {
-          "foreground": "#ffffff",
+          "foreground": "#ffffff"
         }
       },
       {
         "scope": "meta.type.annotation",
         "settings": {
-          "foreground": "#ffffff",
+          "foreground": "#ffffff"
+        }
+      },
+      {
+        "scope": "punctuation.terminator.statement",
+        "settings": {
+          "foreground": "#a7a7a7"
+        }
+      },
+      {
+        "scope": "meta.tag",
+        "settings": {
+          "foreground": "#a7a7a7"
         }
       },
       {
         "scope": "support.type.builtin ",
         "settings": {
-          "foreground": "#a7a7a7",
+          "foreground": "#a7a7a7"
         }
       },
       {
         "scope": "meta.type.parameters",
         "settings": {
-          "foreground": "#ffffff",
+          "foreground": "#ffffff"
         }
       },
       {
         "scope": "storage.type.function.arrow",
         "settings": {
-          "foreground": "#ffffff",
+          "foreground": "#ffffff"
         }
       },
-      
+
       {
         "scope": "string",
         "settings": {
-          "foreground": "#a7a7a7",
+          "foreground": "#a7a7a7"
         }
       },
       {
         "scope": "storage",
         "settings": {
-          "foreground": "#a7a7a7",
+          "foreground": "#a7a7a7"
         }
       },
-      
+
       {
         "scope": "entity.name.tag",
         "settings": {
-          "foreground": "#ffffff",
+          "foreground": "#ffffff"
         }
       },
       {
         "scope": "entity.other.attribute-name",
         "settings": {
-          "foreground": "#ffffff",
+          "foreground": "#ffffff"
         }
       },
       {
@@ -187,13 +234,13 @@
       {
         "scope": "variable",
         "settings": {
-          "foreground": "#FFFFFF"
+          "foreground": "#ffffff"
         }
-      }, 
+      },
       {
         "scope": "entity.name.function",
         "settings": {
-          "foreground": "#FFFFFF"
+          "foreground": "#ffffff"
         }
       },
       {
@@ -201,13 +248,12 @@
         "settings": {
           "foreground": "#ffffff"
         }
-      },
+      }
     ]
-    
   },
 
   "typescript.tsserver.log": "off",
-  "editor.fontSize": 15,
+  "editor.fontSize": 16,
   "workbench.colorCustomizations": {
     "scrollbarSlider.background": "#282525",
     "scrollbarSlider.hoverBackground": "#252121",
@@ -232,10 +278,8 @@
     "tab.inactiveBackground": "#0f0f0f",
     "quickInput.background": "#101010",
     "editor.background": "#0f0f0f",
-    "editorLineNumber.foreground": "#ffffff20",
-    "editorLineNumber.activeForeground": "#ffffff90",
-    
-    
+    "editorLineNumber.foreground": "#f0f0f020",
+    "editorLineNumber.activeForeground": "#f0f0f090"
   },
   "workbench.editor.tabCloseButton": "off",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -247,7 +291,7 @@
   "tabnine.experimentalAutoImports": true,
   "editor.fontFamily": "'IBM Plex Mono'",
   "editor.lineHeight": 1.618,
-  // "workbench.fontAliasing": "antialiased",
+  "workbench.fontAliasing": "antialiased",
   "editor.fontWeight": "400",
   "workbench.layoutControl.enabled": false,
   "editor.accessibilitySupport": "off",
@@ -272,7 +316,7 @@
     // "frame": true,
     "vibrancy": "sidebar",
     "visualEffectState": "active",
-    "transparent": true,
+    "transparent": true
     // "backgroundColor": "rgb(15,15,15)"
   },
   "apc.header": {
@@ -304,7 +348,6 @@
     ".tab:first-child": "border-left: 0px !important;",
     ".tab:last-child": "border-right: 0px !important;",
     ".tab.active": "border-bottom: 1px solid #111827 !important;"
-    
   },
   "yaml.schemas": {
     "file:///Users/henrilahti/.vscode/extensions/atlassian.atlascode-3.0.7/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
@@ -315,22 +358,27 @@
   "apc.font.family": "'IBM Plex Mono'",
   "apc.monospace.font.family": "'IBM Plex Mono'",
   "window.density.editorTabHeight": "compact",
-  "editor.cursorBlinking": "solid",
+  "editor.cursorBlinking": "blink",
   "workbench.list.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
   "editor.smoothScrolling": true,
   "terminal.integrated.env.osx": {
     "CW_NEW_SESSION": "1",
-    "FIG_NEW_SESSION": "1"
+    "FIG_NEW_SESSION": "1",
+    "Q_NEW_SESSION": "1"
   },
   "workbench.activityBar.location": "hidden",
   "workbench.editor.tabActionCloseVisibility": false,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "workbench.colorTheme": "Monochrome Dark Amplified",
+  "vscode-neovim.neovimClean": true,
+  "workbench.colorTheme": "Monochrome Dark",
   "zenMode.hideLineNumbers": false,
   "window.commandCenter": false,
   "editor.minimap.enabled": false,
+  "window.zoomLevel": 0.4,
+  // "editor."
   "prisma.showPrismaDataPlatformNotification": false
+  // "workbench.fontAliasing": "antialiased"
 }
