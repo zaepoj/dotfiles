@@ -144,3 +144,12 @@ ctrl-shift-space = 'layout floating tiling' # 'floating toggle' in i3
 
 
 
+[[on-window-detected]]
+if.app-id = "com.spotify.client"
+    run = "layout floating"
+[[on-window-detected]]
+if.app-id = "com.apple.calculator"
+		run = "layout floating"
+[[on-window-detected]]
+if.app-id = "com.apple.finder"
+		run = "layout floating"
