@@ -1,139 +1,21 @@
 {
-  "git.confirmSync": false,
-  "git.autofetch": true,
-  "editor.tabSize": 2,
-  "explorer.confirmDelete": false,
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "extensions.ignoreRecommendations": false,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.renderWhitespace": "none",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "gitlens.gitCommands.closeOnFocusOut": true,
-  "git.suggestSmartCommit": false,
-  "editor.minimap.enabled": false,
-  "workbench.iconTheme": "chalice-icon-theme",
-  "workbench.statusBar.visible": true,
-  "autoHide.sideBarDelay": 50,
-  "editor.cursorStyle": "line",
-  "editor.insertSpaces": false,
-  "editor.lineNumbers": "on",
-  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-  "editor.wordWrap": "off",
-  "terminal.integrated.gpuAcceleration": "off",
-  "vim.neovimConfigPath": "/usr/bin/nvim",
-  "editor.tokenColorCustomizations": {
-    "functions": "#989cb8"
-  },
-
-  "typescript.tsserver.log": "off",
-  "workbench.activityBar.visible": false,
-  "editor.fontSize": 16,
-  "workbench.colorCustomizations": {
-    "editorSuggestWidget.background": "#344255",
-
-    // the first line in your gif is selected
-    "editorSuggestWidget.selectedBackground": "#485669",
-
-    // the letters you have typed  to bring up intellisense: 'bg' in your example
-    "editorSuggestWidget.highlightForeground": "#97f4e2",
-
-    // 'bg' in a selected entry
-    "editorSuggestWidget.focusHighlightForeground": "#97f4e2",
-
-    "editorSuggestWidget.foreground": "#fff", // the text color
-    //Transparent border
-    "tab.activeBorder": "#ff000000",
-    "tab.activeBackground": "#252b37"
-  },
-  "workbench.editor.tabCloseButton": "off",
-  "editor.copyWithSyntaxHighlighting": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.minimap.renderCharacters": false,
-  "vim.highlightedyank.duration": 500,
-  "vim.highlightedyank.enable": true,
-  "vim.highlightedyank.color": "rgba(250, 240, 170, 0.4)",
-  "editor.guides.indentation": false,
-  "editor.bracketPairColorization.enabled": false,
-  "git.mergeEditor": false,
-  "tabnine.experimentalAutoImports": true,
-  "editor.fontFamily": "'IBM Plex Mono'",
-  "editor.lineHeight": 1.618,
-  "workbench.fontAliasing": "antialiased",
-  // "editor.fontWeight": "500",
-  "workbench.layoutControl.enabled": false,
-  "editor.accessibilitySupport": "off",
-  "gitlens.views.commitDetails.files.layout": "tree",
-  "atlascode.bitbucket.enabled": true,
-  "atlascode.jira.enabled": false,
-  "editor.inlineSuggest.enabled": true,
-  "atlascode.bitbucket.pipelines.monitorEnabled": false,
-  "atlascode.bitbucket.pipelines.explorerEnabled": false,
-  "atlascode.bitbucket.statusbar.showUser": true,
-  "atlascode.bitbucket.statusbar.showProduct": true,
-  "atlascode.bitbucket.statusbar.enabled": true,
-  "workbench.colorTheme": "Monochrome Dark Cool Gray",
-  "explorer.autoReveal": true,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": "true",
-    "scminput": false
-  },
-  "apc.electron": {
-    "titleBarStyle": "customButtonsOnHover",
-    // "frame": true,
-    "vibrancy": "sidebar",
-    "visualEffectState": "active",
-    "transparent": true,
-    "backgroundColor": "rgba(0,0,0,0)"
-  },
-  "apc.header": {
-    "height": 50,
-    "fontSize": 14
-  },
-  "apc.listRow": {
-    "height": 24,
-    "fontSize": 14
-  },
-  "apc.menubar.compact": true,
-  "apc.statusBar": {
-    "position": "bottom",
-    "height": 30,
-    "fontSize": 16
-  },
-  "workbench.editor.showTabs": true,
-  "window.titleBarStyle": "native",
-  "apc.imports": ["/Users/henrilahti/.vscode/resize-quickinput-widget.js"],
-  "apc.stylesheet": {
-    "#workbench\\.parts\\.sidebar > .composite.title": "opacity: 0; pointer-events: none",
-    ".title.tabs.title-border-bottom .tabs-container": "cursor: default; -webkit-app-region: no-drag;",
-    ".editor-actions": "display: none;",
-    ".nosidebar .tabs": "padding-left: 80px;",
-    ".scrollbar": " width: 10px !important",
-    ".scrollbar .slider": "border-radius: 6px; width: calc(100% - 2px) !important;",
-    ".suggest-widget": "border-radius: 8px !important; width: 600px !important;",
-    ".tab": "border: 1px solid #1a2238 !important; border-top: 0px !important; border-bottom: 0px",
-    ".tab:first-child": "border-left: 0px !important;",
-    ".tab:last-child": "border-right: 0px !important;",
-    ".tab.active": "border-bottom: 1px solid #111827 !important;"
-  },
-  "yaml.schemas": {
-    "file:///Users/henrilahti/.vscode/extensions/atlassian.atlascode-3.0.7/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
-  "editor.stickyScroll.enabled": true,
-  "update.mode": "manual",
-  "chaliceIcons.showArrows": true,
-  "apc.font.family": "'IBM Plex Mono'",
-  "apc.monospace.font.family": "'IBM Plex Mono'",
-  "window.density.editorTabHeight": "compact",
-  "editor.cursorBlinking": "solid",
-  "workbench.list.smoothScrolling": true,
-  "terminal.integrated.smoothScrolling": true,
-  "editor.smoothScrolling": true,
-  "terminal.integrated.env.osx": {
-    "CW_NEW_SESSION": "1",
-    "FIG_NEW_SESSION": "1"
-  },
-  "window.zoomLevel": 1
+    "workbench.iconTheme": "chalice-icon-theme",
+    "workbench.colorTheme": "Monochrome Dark",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.minimap.enabled": false,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+    "chat.commandCenter.enabled": false,
+    "window.commandCenter": false,
+    "editor.smoothScrolling": true,
+    "editor.guides.indentation": false,
+    "editor.formatOnSave": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
